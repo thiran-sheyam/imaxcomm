@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>imax comm</title>
+	<script type="text/javascript">
+		// Set the date we're counting down to
+var countDownDate = new Date("May 19, 2018 16:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+	</script>
+	<style type="text/css">
+		p {
+		  text-align: center;
+		  font-size: 60px;
+		  margin-top:0px;
+		  margin-bottom: 0px;
+		  color: #008CBA;
+		}
+		body{
+
+		}
+		.header{
+			text-align: center;
+			font-size: 40px;
+			font-family: "robotto"
+
+		}
+		.address{
+			text-align: center;
+			font-size: 20px;
+			font-family: "robotto"
+
+		}
+		.listalign{
+			font-size: 20px;
+			font-family: "robotto"
+
+		}
+	</style>
+</head>
+
+<body>
+	<div align="center">
+		<img src="images/imaxxlogo.jpg" >
+	</div>
+	<br>
+	<div><p class="header" style="color: #008CBA;">India's First Maximo Technical Meet on May-19 @ 4:30 PM.</p> <br>
+	<p class="address" style="color: #008CBA;"> Venue : Andhra Chamber Of Commerce, New No. 23 Velagapudi Ramakrishna Bldg, 3rd Cross Street, Nandanam, Chennai, Tamil Nadu, India - 600035  </p><br>
+	<p style="font-family: robotto;font-size: 25px;text-align: left;margin-left: 60px;"> Agenda</p>
+	<ul class="listalign" style="color: #008CBA;text-align: left;;margin-left: 35px;">
+		<li>Welcome Note</li>
+		<li>Introduction</li>
+		<li>Presentation</li>
+		<li>Interaction Live</li>
+		<li>Online Q & A</li>
+		<li>Vote Of Thanks</li>
+	</ul>
+	<p id="demo"></p><br>
+	<p style="font-family: robotto;font-size: 20px;text-align: center;">
+	For assistance contact Prakasham-9884676418, Dinesh-9003231215.</p></div>
+
+</body>
+</html>
+
