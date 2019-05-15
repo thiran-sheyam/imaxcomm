@@ -56,7 +56,16 @@
         <div class="intro">
             <h2>29 June, 2019 </h2>
             <h1>Maximo Meetup 2019</h1>
-            <a class="btn btn-white"  href="https://docs.google.com/forms/d/e/1FAIpQLSdpejMiifekKe0E_m9UKLuIJ-Io5wGrLedeakoMvU-CnEte_g/viewform">Register Now</a>
+            <!--<a class="btn btn-white"  href="https://docs.google.com/forms/d/e/1FAIpQLSdpejMiifekKe0E_m9UKLuIJ-Io5wGrLedeakoMvU-CnEte_g/viewform">Register Now</a>-->
+			<a class="btn btn-white"
+			<button onclick="myFunction()">Register Now</button>
+			</a> 
+
+			<script>
+			function myFunction() {
+			  window.open("https://docs.google.com/forms/d/e/1FAIpQLSdpejMiifekKe0E_m9UKLuIJ-Io5wGrLedeakoMvU-CnEte_g/viewform");
+			}
+			</script>
 			<p></p>
             <div id="clockdiv">
   <div>
@@ -625,10 +634,22 @@
             <div class="row">
                 <div class="col-md-12">
                  <!--   <p class="site-info">Designed and <br> Developed by <a href="http://technextit.com">Technext Limited</a></p>-->
+
+			<script>
+			function myFunction1() {
+			  window.open("https://twitter.com/search?q=imaxcomm&src=typd");
+			}
+			function myFunction2() {
+			  window.open("https://www.facebook.com/Imaxcomm-2325047264441949/");
+			}
+			function myFunction3() {
+			  window.open("https://www.linkedin.com/feed/hashtag/imaxcomm/");
+			}
+			</script>
                     <ul class="social-block">
-                        <li><a href="https://twitter.com/Thirantech"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="https://www.facebook.com/Thiran-Technologies-Private-Limited-1570966749630707/"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/thiran-technologies-209a21150/"><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a  button onclick="myFunction1()" ><i class="ion-social-twitter"></i></a></li>
+                        <li><a button onclick="myFunction2()" ><i class="ion-social-facebook"></i></a></li>
+                        <li><a button onclick="myFunction3()" ><i class="ion-social-linkedin-outline"></i></a></li>
                         <!-- <li><a href=""><i class="ion-social-googleplus"></i></a></li> -->
                     </ul>
                 </div>
